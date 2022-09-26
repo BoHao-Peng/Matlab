@@ -316,24 +316,24 @@ classdef CONEX_Controller < handle
                         warning('Value is out of range !(from 1 to 1E3)')
                         error_flag = true;
                     end
-                case 'QIL' % Motor¡¦s peak current limit
+                case 'QIL' % MotorÂ¡Â¦s peak current limit
                     if (value < 0.05)  || (value > 3)
                         warning('Value is out of range !(from 0.05 to 3)')
                         error_flag = true;
                     end
-                case 'QIR' % Motor¡¦s rms current limit.
+                case 'QIR' % MotorÂ¡Â¦s rms current limit.
                     if (value < 0.05)  || (value > 1.5)
                         warning('Value is out of range !(from 0.05 to 1.5)')
                         error_flag = true;
                     end
-                case 'QIT' % Motor¡¦s rms current averaging time
+                case 'QIT' % MotorÂ¡Â¦s rms current averaging time
                     if (value < 0.01)  || (value > 100)
                         warning('Value is out of range !(from 0.05 to 3)')
                         error_flag = true;
                     end
-                case 'RS##' % Reset controller¡¦s address
+                case 'RS##' % Reset controllerÂ¡Â¦s address
                     value = [];
-                case 'SA' % controller¡¦s RS-485 address
+                case 'SA' % controllerÂ¡Â¦s RS-485 address
                     if (value < 2)  || (value > 31)
                         warning('Value is out of range !(from 2 to 31)')
                         error_flag = true;
