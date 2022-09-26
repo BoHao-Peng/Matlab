@@ -32,7 +32,7 @@ classdef PointGrey < handle & dynamicprops
             try 
                 obj.hwInfo = imaqhwinfo('pointgrey');
             catch
-                errordlg('±z©|¥¼¦w¸ËPointgrey package')
+                errordlg('Â±zÂ©|Â¥Â¼Â¦wÂ¸Ã‹Pointgrey package')
                 obj.connect_status = false;
                 return
             end
@@ -68,7 +68,7 @@ classdef PointGrey < handle & dynamicprops
             if ~isempty(value)
                 bound = self.framerate_boundary;
                 if (value < bound(1) || value > bound(2))
-                    warning(strcat('Framerate is out of range! ( Range¡G',num2str(bound(1)),' ~ ',num2str(bound(2)),'(frames/sec) )'));
+                    warning(strcat('Framerate is out of range! ( RangeÂ¡G',num2str(bound(1)),' ~ ',num2str(bound(2)),'(frames/sec) )'));
                 else
                     set(self.src, "FrameRate", value);
                     self.set_boundary = propinfo(self.src);
@@ -80,7 +80,7 @@ classdef PointGrey < handle & dynamicprops
         function SetShutter(self, value)
             bound = self.shutter_boundary;
             if (value < bound(1) || value > bound(2))
-                warning(strcat('Shutter is out of range! ( Range¡G',num2str(bound(1)),' ~ ',num2str(bound(2)),'(ms) )'));
+                warning(strcat('Shutter is out of range! ( RangeÂ¡G',num2str(bound(1)),' ~ ',num2str(bound(2)),'(ms) )'));
             else
                 set(self.src, "Shutter", value);
             end
