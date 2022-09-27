@@ -1,4 +1,4 @@
-function wavefront = Seidel_Sampling(pos, n, m)
+function wavefront = SeidelSampling(pos, n, m)
     p = abs(pos);
     theta = angle(pos);
     if m >= 0
