@@ -1,4 +1,4 @@
-function OPD = zernike_sampling(term, pos)
+function OPD = ZernikeSampling(term, pos)
 % OPD = zernike_sampling(index, pos)
 % Input :
     %    term   -> the term of zernike (0 : Piston, 1,2 : tip,tilt)
