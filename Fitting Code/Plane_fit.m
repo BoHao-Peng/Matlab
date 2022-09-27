@@ -4,7 +4,7 @@ function p = Plane_fit(point)
     %         point   -> the coordinate of points (the last dimension size must be 3 ! (x,y,z))
     % Output:
     %         p -> parameters of x,y, z, and constant, as following:
-    %              p(1) * x + p(2) * y + p(3) * z + p(4) = 0
+    %              p(1) * x + p(2) * y + p(3) * z + p(4) = 0; % P(3) = 1
     dim = size(point);
     if dim(end) ~= 3
         error('The last dimension must be 3! (x,y,z)');
