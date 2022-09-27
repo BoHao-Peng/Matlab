@@ -1,4 +1,4 @@
-function p = Plane_fit(point)
+function p = PlaneFit(point)
     % p = Plane_fit(point)
     % Input :
     %         point   -> the coordinate of points (the last dimension size must be 3 ! (x,y,z))
