@@ -1,4 +1,4 @@
-classdef CONEX_Controller < handle
+classdef CONEXController < handle
     % CONEX Controller Documentation
     % Link : https://www.newport.com/mam/celum/celum_assets/resources/CONEX-CC_-_Controller_Documentation.pdf?1
     % Unused function :
@@ -19,7 +19,7 @@ classdef CONEX_Controller < handle
     end
     
     methods(Static) % Constructor
-        function obj = CONEX_Controller(com,address)
+        function obj = CONEXController(com,address)
             if (nargin < 2)
                 address = 1;
             end
