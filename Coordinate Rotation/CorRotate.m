@@ -1,4 +1,4 @@
-function point_r = Cor_Rotate(point, center, angle, corFlag)
+function point_r = CorRotate(point, center, angle, corFlag)
     % point_r = Cor_Rotate(point, center, angle, corFlag);
     % Rotation Order : alpha -> beta -> gamma
     % Input:
