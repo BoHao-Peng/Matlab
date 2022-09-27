@@ -1,4 +1,4 @@
-function [xc, yc, R] = Circle_fit(x, y)
+function [xc, yc, R] = CircleFit(x, y)
     % Mathematical method from https://www.sciencedirect.com/science/article/pii/0734189X89900881
     % [xc, yc, R] = Circle_fit(x, y);
     % Input :
