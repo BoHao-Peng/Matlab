@@ -2,7 +2,7 @@ function point_r = Cor_Rotate(point, center, angle, corFlag)
     % point_r = Cor_Rotate(point, center, angle, corFlag);
     % Rotation Order : alpha -> beta -> gamma
     % Input:
-    %        point   -> coordinated point to be rotated (final dimension must be 3 [X,Y,Z] )
+    %        point   -> coordinated point to be rotated (The last dimension must be 3 [X,Y,Z] )
     %        center  -> [xc, yc, zc] (center of rotation)
     %        angle   -> [alpha, beta, gamma] (same as Code V)
     %        corFlag -> True : use variable "center" as new orgin
