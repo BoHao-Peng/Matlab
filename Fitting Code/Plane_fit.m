@@ -7,7 +7,7 @@ function p = Plane_fit(point)
     %              p(1) * x + p(2) * y + p(3) * z + p(4) = 0
     dim = size(point);
     if dim(end) ~= 3
-        error('Final dimension must be 3! (x,y,z)');
+        error('The last dimension must be 3! (x,y,z)');
     end
     data_len = prod(dim(1:end-1));
     x = point(1:data_len);
