@@ -1,7 +1,7 @@
 function p = Plane_fit(point)
     % p = Plane_fit(point)
     % Input :
-    %         point   -> the coordinate of points (final dimension size must be 3 ! (x,y,z))
+    %         point   -> the coordinate of points (the last dimension size must be 3 ! (x,y,z))
     % Output:
     %         p -> parameters of x,y, z, and constant, as following:
     %              p(1) * x + p(2) * y + p(3) * z + p(4) = 0
